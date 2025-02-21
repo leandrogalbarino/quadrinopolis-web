@@ -1,22 +1,20 @@
 export let obras = [
   {
     capa: '../images/obras/solo-leveling.jpg',
-    name: 'solo-leveling', 
+    name: 'solo-leveling',
+    author: 'Chu-Gong',
     capitulos: 110
   },
   {
     capa: '../images/obras/omv.webp',
-    name: 'omv', 
+    name: 'omv',
+    author: 'Sing Shong',
     capitulos: 110
   },
   {
     capa: '../images/obras/lookism.jpg',
-    name: 'lookism', 
-    capitulos: 23
-  },
-  {
-    capa: '../images/obras/lookism.jpg',
-    name: 'lookism', 
+    name: 'lookism',
+    author: 'Park Tae Jun',
     capitulos: 23
   }
 ];

@@ -2,7 +2,7 @@
 
 /* main-CATALOGO-HEADER -> PESQUISAR E LOGO OBRAS */
 /* CONTAINER*/
-.main-pesquisar-container {
+.pesquisa {
     /* background-color: rgb(43, 226, 92); */
     margin: 0 auto;
     margin-top: 40px;
@@ -11,24 +11,22 @@
     flex-wrap: wrap;
     align-self: center;
     max-width: 800px;
-    /* height: 500px; */
-    /* box-shadow: 0px 0px 10px black; */
     justify-content: space-between;
+
 }
 
 /* CONTAINER = OBRAS + LIVRINHO */
-.main-pesquisar-logo-obra {
-    /* background-color: black; */
+.pesquisa__logo {
     display: flex;
     align-items: center;
 }
 
-.main-pesquisar-livrinho-obra {
+.pesquisa__logo-img {
     max-width: 30px;
     max-height: 30px;
 }
 
-.main-pesquisar-logo-obra p {
+.pesquisa__logo h2 {
     color: rgb(81, 17, 127);
     font-size: 25px;
     font-weight: bold;
@@ -36,12 +34,11 @@
 }
 
 /* CONTAINER = PESQUISAR + LUPA */
-.main-pesquisar-pesquisa {
-    /* background-color: black; */
+.pesquisa__pesquisar {
     align-self: center;
 }
 
-.main-pesquisar-pesquisa-barra-pesquisa {
+.pesquisa__barra-pesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,26 +46,32 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.436);
 }
 
-.main-pesquisar-pesquisa-barra-pesquisa input {
+
+.pesquisa__lupa-pesquisar {
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa__lupa-img {
+    width: 100%;
+}
+
+.pesquisa__barra-pesquisa input {
     outline: none;
     border: none;
 }
 
-.main-pesquisar-pesquisa-lupa-pesquisar {
-    padding-left: 5px;
-    width: 30px;
-    height: 30px;
-}
-
-.main-pesquisar-pesquisa-lupa-botao {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
 
 /* CATALOGO OBRAS */
 
-.main-catalogo-container {
+.catalogo {
     max-width: 700px;
     margin: 20px auto;
     display: flex;
@@ -77,14 +80,15 @@
     justify-content: space-around;
 }
 
-.link-obra{
-    display:block;
+.catalogo__link-obra {
+    display: block;
     width: 210px;
     height: 300px;
     padding: 10px;
 
 }
-.main-catalogo-imagem {
+
+.catalogo__img {
     width: 210px;
     height: 300px;
     margin-bottom: 40px;
@@ -93,14 +97,14 @@
     transition: box-shadow 0.3s;
 }
 
-.main-catalogo-imagem:hover {
+.catalogo__img:hover {
     box-shadow: 0px 0px 50px blueviolet;
     cursor: pointer;
 }
 
 
 /* Publicar Obra */
-.main-publicar-container {
+.publicar-obra {
 
     max-width: 800px;
     height: 200px;
@@ -110,7 +114,7 @@
     justify-content: center;
 }
 
-.main-publicar-link {
+.publicar-obra__link {
     display: block;
     background-color: white;
     width: 300px;
@@ -125,23 +129,7 @@
     transition: background-color 0.5s;
 }
 
-.main-publicar-link:hover {
+.publicar-obra__link:hover {
     background-color: rgb(237, 236, 236);
 }
 
-/* FOOTER */
-.footer-logo-container {
-    max-width: 800px;
-    height: 150px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-logo-tipo {
-    color: blueviolet;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
-}

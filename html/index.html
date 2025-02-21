@@ -10,35 +10,32 @@
 </head>
 
 <body>
-    <main class="main-">
-        <div class="main-pesquisar-container">
-            <div class="main-pesquisar-logo-obra">
-                <img src="../images/livro.png" alt="livro" class="main-pesquisar-livrinho-obra">
-                <p>Obras</p>
+    <main class="main">
+        <section class="pesquisa">
+            <div class="pesquisa__logo">
+                <img src="../images/livro.png" alt="livro" class="pesquisa__logo-img">
+                <h2>Obras</h2>
             </div>
-            <div class="main-pesquisar-pesquisa">
-                <form action="/buscar" method="get" class="main-pesquisar-pesquisa-barra-pesquisa">
-                    <button type="submit" class="main-pesquisar-pesquisa-lupa-botao">
-                        <img src="../images/lupa.png" alt="lupa-pesquisar" class="main-pesquisar-pesquisa-lupa-pesquisar">
+            <div class="pesquisa__pesquisar">
+                <form action="/buscar" method="get" class="pesquisa__barra-pesquisa">
+                    <button type="submit" class="pesquisa__lupa-pesquisar">
+                        <img src="../images/lupa.png" alt="lupa" class="pesquisa__lupa-img">
                     </button>
-                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                    <input type="text" id="pesquisa" placeholder="Pesquisar">
+                
                 </form>
             </div>
-        </div>
+        </section>
 
-        <div class="main-catalogo-container"></div>
+        <section class="catalogo"></section>
 
-        <div class="main-publicar-container">
-            <a href="publicar-obra.html" class="main-publicar-link">
+        <section class="publicar-obra">
+            <a href="publicar-obra.html" class="publicar-obra__link">
                 Publicar Obra
             </a>
-        </div>
-        <div class="footer-logo-container">
-            <div class="footer-logo-tipo">
-                Quadrinópolis
-            </div>
-        </div>
+        </section>
     </main>
+
     <script type="module" src="../scripts/catalogo.js"></script>
 </body>
 

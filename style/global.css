@@ -22,7 +22,7 @@
 
 }
 
-.header .logo {
+.header__logo a{
   color: white;
   font-weight: bold;
   font-size: 26px;
@@ -30,7 +30,9 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.header-entrar {
+
+
+.header__entrar {
   background-color: pink;
   width: 100px;
   height: 30px;
@@ -45,11 +47,30 @@
   align-items: center;
 }
 
-.header-entrar a {
+.header__entrar:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.header__entrar a{
   text-decoration: none;
   color: white;
 }
 
-.header-entrar:hover {
-  background-color: rgba(255, 255, 255, 0.33);
+
+/* FOOTER */
+.footer {
+  background-color: white;
+  /* max-width: 800px; */
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  color: blueviolet;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
 }
