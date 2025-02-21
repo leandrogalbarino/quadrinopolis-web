@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/pages/entrar.css">
+</head>
+
+<body>
+    <main className="main-container">
+        <div className="main-logo-container">
+            <div className="main-logo-tipo">
+                Quadrinópolis
+            </div>
+        </div>
+        
+        <div className="main-entrar-container">
+            <div className="main-entrar-bem-vindo">
+                <p>Bem Vindo!</p>
+            </div>
+            <div className="main-entrar-estrada-container">
+                <form action="" method="get" className="main-entrar-entrada-form">
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuário" />
+                    <input type="password" name="senha" id="senha" placeholder="Senha" />
+                    <button type="submit">Entrar</button>
+                </form>
+                <div className="main-entrar-entrada-registro">
+                    <p>Não possui cadastro?</p>
+                    <Link href="/registrar">
+                    Registrar
+                    </Link>
+                </div>
+            </div>
+        </div>
+        <div className="footer-catalogo-container">
+            <Link href="/catalogo">
+            <div className="footer-catalogo">Catálogo</div>
+            </Link>
+        </div> 
+    </main>
+
+</body>
+
+</html>

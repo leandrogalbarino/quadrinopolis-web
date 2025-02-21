@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/pages/catalogo.css">
+</head>
+
+<body>
+    <main class="main-">
+        <div class="main-pesquisar-container">
+            <div class="main-pesquisar-logo-obra">
+                <img src="../images/livro.png" alt="livro" class="main-pesquisar-livrinho-obra">
+                <p>Obras</p>
+            </div>
+            <div class="main-pesquisar-pesquisa">
+                <form action="/buscar" method="get" class="main-pesquisar-pesquisa-barra-pesquisa">
+                    <button type="submit" class="main-pesquisar-pesquisa-lupa-botao">
+                        <img src="../images/lupa.png" alt="lupa-pesquisar" class="main-pesquisar-pesquisa-lupa-pesquisar">
+                    </button>
+                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                </form>
+            </div>
+        </div>
+
+        <div class="main-catalogo-container"></div>
+
+        <div class="main-publicar-container">
+            <a href="publicar-obra.html" class="main-publicar-link">
+                Publicar Obra
+            </a>
+        </div>
+        <div class="footer-logo-container">
+            <div class="footer-logo-tipo">
+                Quadrinópolis
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../scripts/catalogo.js"></script>
+</body>
+
+</html>

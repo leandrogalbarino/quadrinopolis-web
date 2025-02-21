@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* HEADER */
+.header-container {
+  background-image: linear-gradient(rgb(106, 30, 130), rgb(208, 18, 132));
+  height: 100px;
+  margin: 0px;
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.516);
+}
+
+.header {
+  margin: 0 auto;
+  padding: 0px 20px;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-entrar {
+  background-color: pink;
+  width: 100px;
+  height: 30px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: transparent;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-entrar a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-entrar:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+}
