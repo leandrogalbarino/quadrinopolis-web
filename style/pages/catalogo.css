@@ -38,14 +38,17 @@
     align-self: center;
 }
 
-.pesquisa__barra-pesquisa {
+.pesquisa__form{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #ccc; */
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.436);
 }
 
+.pesquisa__form input {
+    outline: none;
+    border: none;
+}
 
 .pesquisa__lupa-pesquisar {
     padding-left: 5px;
@@ -63,10 +66,7 @@
     width: 100%;
 }
 
-.pesquisa__barra-pesquisa input {
-    outline: none;
-    border: none;
-}
+
 
 
 /* CATALOGO OBRAS */
@@ -94,11 +94,12 @@
     margin-bottom: 40px;
     border-radius: 3px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.595);
-    transition: box-shadow 0.3s;
+    transition: scale 0.3s, box-shadow 0.1s;
 }
 
 .catalogo__img:hover {
-    box-shadow: 0px 0px 50px blueviolet;
+    box-shadow: 0px 0px 10px blueviolet;
+    scale:1.1;
     cursor: pointer;
 }
 

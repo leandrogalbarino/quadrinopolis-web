@@ -16,5 +16,11 @@ export let obras = [
     name: 'lookism',
     author: 'Park Tae Jun',
     capitulos: 23
+  },
+  {
+    capa: '../images/obras/solo-leveling.jpg',
+    name: 'loo',
+    author: 'Park Tae Jun',
+    capitulos: 23
   }
 ];
