@@ -32,7 +32,7 @@
 
 
 
-.header__entrar {
+.header__login {
   background-color: pink;
   width: 100px;
   height: 30px;
@@ -47,15 +47,14 @@
   align-items: center;
 }
 
-.header__entrar:hover {
+.header__login:hover {
   background-color: rgba(255, 255, 255, 0.33);
 }
 
-.header__entrar a{
+.header__login a{
   text-decoration: none;
   color: white;
 }
-
 
 /* FOOTER */
 .footer {

@@ -8,15 +8,15 @@ export function createHeaderHTML() {
   const header = createElement('div', 'header');
   const logo = createElement('div', 'header__logo');
   const namePage = createElement('a', 'logo', 'Quadrinópolis', { href: 'index.html' });
-  const headerEntrar = createElement('div', 'header__entrar');
-  const linkEntrar = createElement('a', '', 'Entrar', { href: 'registrar.html' });
+  const headerLogin = createElement('div', 'header__login');
+  const linkLogin = createElement('a', '', 'Entrar', { href: 'registrar.html' });
 
 
   logo.appendChild(namePage);
-  headerEntrar.appendChild(linkEntrar);
+  headerLogin.appendChild(linkLogin);
 
   header.appendChild(logo);
-  header.appendChild(headerEntrar);
+  header.appendChild(headerLogin);
   headerContainer.appendChild(header);
 
   body.insertAdjacentElement('afterbegin', headerContainer)
@@ -35,12 +35,11 @@ export function createFooterHTML() {
 
 
 export function createFooterLogin() {
-  const body = document.querySelector('.logar__body');
+  const body = document.querySelector('.login__body');
 
-  const footer = createElement('footer', 'logar__footer');
-  const link = createElement('a', 'logar__footer-redirecionamento', 'Catálogo', { href: 'index.html' });
+  const footer = createElement('footer', 'login__footer');
+  const link = createElement('a', 'login__footer-redirect', 'Catálogo', { href: 'index.html' });
 
   footer.appendChild(link);
-  console.log(footer.innerHTML);
   body.insertAdjacentElement('beforeend', footer);
 }

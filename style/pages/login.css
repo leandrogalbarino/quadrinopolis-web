@@ -4,11 +4,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 /* MAIN */
-
-.logar__body{
+.login__body{
   background-color: rgb(124, 84, 154) ;
   background-image: url(../../images/castelo.jpg);
   background-position: center center;
@@ -30,7 +27,14 @@
   max-height: 700px;
 }
 
-.logo-container {
+.logo {
+  color: white;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+.logo__element{
   max-width: 800px;
   height: 100px;
   margin: 0 auto;
@@ -40,20 +44,14 @@
   justify-content: center;
 }
 
-.logo {
-  color: white;
-  font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 40px;
-}
 
-.logar {
+.login {
   background-color: rgb(245, 245, 245);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.633);
   width: 420px;
 }
 
-.logar__bem-vindo {
+.login__greeting {
   background-image: linear-gradient(rgb(106, 30, 130), rgb(208, 18, 132));
   display: flex;
   align-items: center;
@@ -61,14 +59,14 @@
   height: 100px;
 }
 
-.logar__bem-vindo p {
+.login__greeting p {
   color: white;
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
 }
 
-.logar__login {
+.login__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -76,17 +74,20 @@
   min-height: 250px;
 }
 
-.logar__login h2{
-  color: rgb(106, 30, 130);
+.login__container h2{
+  color: rgb(124, 84, 154);
+  text-transform:uppercase;
+  font-size: 25px;
 }
-.logar__login input {
+
+.login__container input {
   display: flex;
   align-items: center;
   width: 320px;
   margin: 5px;
   padding: 10px 20px;
   height: 30px;
-  /* Espaçamento interno (superior/inferior e laterais) */
+
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background-color: rgb(127, 127, 127);
@@ -98,12 +99,11 @@
   color: white;
 }
 
-.logar__form input::placeholder {
+.login__container input::placeholder {
   color: rgba(255, 255, 255, 0.647);
 }
 
-
-.logar__login button {
+.login__container button {
 
   width: 250px;
   height: 45px;
@@ -120,13 +120,7 @@
   text-transform: uppercase;
 }
 
-.logar__subtitulo {
-  color: rgb(124, 84, 154);
-  text-transform:uppercase;
-  font-size: 20px;
-}
-
-.logar__form {
+.login__form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -134,7 +128,7 @@
   justify-content: center;
 }
 
-.logar__redirecionamento {
+.login__redirect {
   width: 240px;
   display: flex;
   padding-top: 10px;
@@ -144,11 +138,11 @@
   justify-content: center;
 }
 
-.logar__redirecionamento p {
+.login__redirect p {
   color: hsl(0, 0%, 43%);
 }
 
-.logar__redirecionamento a {
+.login__redirect a {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -156,7 +150,7 @@
   color: rgb(124, 84, 154)
 }
 
-.logar__footer{
+.login__footer{
   border:none;
   width: 190px;
   display: flex;
@@ -168,7 +162,7 @@
   border-bottom: 1px solid white;
 }
 
-.logar__footer-redirecionamento{
+.login__footer-redirect{
   margin: 0 auto;
   text-decoration: none;
   color: white;
@@ -176,6 +170,6 @@
 }
 
 
-.logar__footer-redirecionamento:hover{
+.login__footer-redirect:hover{
   color: rgb(181, 181, 181);
 }

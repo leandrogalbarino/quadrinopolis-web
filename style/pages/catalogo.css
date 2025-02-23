@@ -1,8 +1,5 @@
-/* MAIN */
-
-/* main-CATALOGO-HEADER -> PESQUISAR E LOGO OBRAS */
-/* CONTAINER*/
-.pesquisa {
+/* CONTAINER */
+.search {
     /* background-color: rgb(43, 226, 92); */
     margin: 0 auto;
     margin-top: 40px;
@@ -16,41 +13,41 @@
 }
 
 /* CONTAINER = OBRAS + LIVRINHO */
-.pesquisa__logo {
+.search__logo {
     display: flex;
     align-items: center;
 }
 
-.pesquisa__logo-img {
+.search__logo-img {
     max-width: 30px;
     max-height: 30px;
 }
 
-.pesquisa__logo h2 {
+.search__logo h2 {
     color: rgb(81, 17, 127);
     font-size: 25px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CONTAINER = PESQUISAR + LUPA */
-.pesquisa__pesquisar {
+/* CONTAINER = PESQUISAR + BOTAO */
+.search__container {
     align-self: center;
 }
 
-.pesquisa__form{
+.search__form{
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.436);
 }
 
-.pesquisa__form input {
+.search__form input {
     outline: none;
     border: none;
 }
 
-.pesquisa__lupa-pesquisar {
+.search__button {
     padding-left: 5px;
     width: 30px;
     height: 30px;
@@ -61,17 +58,12 @@
     align-items: center;
     justify-content: center;
 }
-
-.pesquisa__lupa-img {
+.search__button-img {
     width: 100%;
 }
 
-
-
-
 /* CATALOGO OBRAS */
-
-.catalogo {
+.catalog {
     max-width: 700px;
     margin: 20px auto;
     display: flex;
@@ -80,7 +72,7 @@
     justify-content: space-around;
 }
 
-.catalogo__link-obra {
+.catalog__link-work {
     display: block;
     width: 210px;
     height: 300px;
@@ -88,7 +80,7 @@
 
 }
 
-.catalogo__img {
+.catalog__img {
     width: 210px;
     height: 300px;
     margin-bottom: 40px;
@@ -97,7 +89,7 @@
     transition: scale 0.3s, box-shadow 0.1s;
 }
 
-.catalogo__img:hover {
+.catalog__img:hover {
     box-shadow: 0px 0px 10px blueviolet;
     scale:1.1;
     cursor: pointer;
@@ -105,8 +97,7 @@
 
 
 /* Publicar Obra */
-.publicar-obra {
-
+.publish {
     max-width: 800px;
     height: 200px;
     margin: 0 auto;
@@ -115,7 +106,7 @@
     justify-content: center;
 }
 
-.publicar-obra__link {
+.publish__link {
     display: block;
     background-color: white;
     width: 300px;
@@ -130,7 +121,7 @@
     transition: background-color 0.5s;
 }
 
-.publicar-obra__link:hover {
+.publish__link:hover {
     background-color: rgb(237, 236, 236);
 }
 

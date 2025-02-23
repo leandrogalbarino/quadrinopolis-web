@@ -10,89 +10,42 @@
 </head>
 
 <body>
-    <main class="main-container">
-        <div class="main-autor-container">
-            <div class="main-autor">
-                <span>Autor</span>
-            </div>
+    <main class="main">
+        <div class="author-container">
+            <div class="js-author author"></div>
         </div>
 
-        <div class="main-titulo">
-            <h1>Titulo</h1>
-            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ducimus ea nesciunt deleniti facere
-                neque exercitationem tempora atque labore, nostrum quis ad fugiat quibusdam quas alias similique
-                corporis consectetur nemo?"</p>
-        </div>
-        <div class="main-episodios-container">
-            <div class="main-titulo-episodios">
+        <div class="presentation js-presentation"></div>
+
+        <div class="chapters js-chapters">
+            <div class="chapters__title">
                 <h2>Episódios</h2>
             </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 1</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 2</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
-            <div class="main-episodios">
-                <a href="Episodio">Episódio 3</a>
-            </div>
         </div>
 
-        <div class="main-adicionar-comentarios-container">
-            <div class="main-adicionar-comentarios-titulo">
-                <span>Adicionar Comentário</span>
+        <div class="add-comment">
+            <div class="add-comment__title">
+                <h2>Adicionar Comentário</h2>
             </div>
-            <form action="" method="get" class="main-adicionar-comentarios">
-                <textarea id="comentario-adc" rows="4" placeholder="Essa obra é sensacional..." required></textarea>
-                <button type="submit" class="botao-vertical">Enviar</button>
+            <form action="" method="get" class="add-comment__add">
+                <textarea id="add-comment__add" rows="4" placeholder="Essa obra é sensacional..." required></textarea>
+                <button class="add-comment__submit">Enviar</button>
             </form>
         </div>
-        <div class="main-comentarios-container">
-            <div class="main-comentario">
+
+        <div class="comments js-comments">
+            <div class="comments__value">
                 <span>Miguel</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
             </div>
-            <div class="main-comentario">
-                <span>Arthur</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium minus maxime commodi accusantium recusandae distinctio rem at est!</p>
-            </div>
-            <div class="main-comentario">
-                <span>Leandro</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium porro alias quidem consequatur autem animi nisi dolore sint.</p>
-            </div>
         </div>
-        <div class="main-footer">
-            <span>Todos os diretos reservados</span>
-        </div>
+
     </main>
-    <script type="module" src="../scripts/obra.js"></script>
+    <footer class="footer__work">
+        <span>Todos os diretos reservados</span>
+    </footer>
+
+    <script type="module" src="../scripts/comic.js"></script>
 </body>
 
 </html>
