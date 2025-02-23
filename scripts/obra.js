@@ -1,4 +1,4 @@
-import { createFooterHTML, createHeaderHTML } from "./header.js";
+import { createFooterHTML, createHeaderHTML } from "./layout.js";
 
 createHeaderHTML();
 createFooterHTML();

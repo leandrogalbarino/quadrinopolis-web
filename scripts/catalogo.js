@@ -1,5 +1,5 @@
 import { createElement } from "./utils.js";
-import { createHeaderHTML, createFooterHTML } from "./header.js";
+import { createHeaderHTML, createFooterHTML } from "./layout.js";
 import { obras } from "../data/obras.js";
 
 

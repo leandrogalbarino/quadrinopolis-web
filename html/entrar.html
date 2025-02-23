@@ -6,41 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrar</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/pages/entrar.css">
+    <link rel="stylesheet" href="../style/pages/login.css">
 </head>
 
-<body>
-    <main className="main-container">
-        <div className="main-logo-container">
-            <div className="main-logo-tipo">
+<body class="logar__body">
+    <main class="main">
+        <section class="logo-container">
+            <div class="logo">
                 Quadrinópolis
             </div>
-        </div>
-        
-        <div className="main-entrar-container">
-            <div className="main-entrar-bem-vindo">
+        </section>
+        <section class="logar">
+            <div class="logar__bem-vindo">
                 <p>Bem Vindo!</p>
             </div>
-            <div className="main-entrar-estrada-container">
-                <form action="" method="get" className="main-entrar-entrada-form">
-                    <input type="text" name="usuario" id="usuario" placeholder="Usuário" />
-                    <input type="password" name="senha" id="senha" placeholder="Senha" />
-                    <button type="submit">Entrar</button>
+            <div class="logar__login">
+                <form class="logar__form">
+                    <input type="text" name="usuario-registro" id="usuario-registro" placeholder="Usúario">
+                    <input type="text" name="senha-registro" id="senha-registro" placeholder="Senha">
+                    <button class="registrar__submit">Entrar</button>
                 </form>
-                <div className="main-entrar-entrada-registro">
+                <div class="logar__redirecionamento">
                     <p>Não possui cadastro?</p>
-                    <Link href="/registrar">
-                    Registrar
-                    </Link>
+                    <a href="registrar.html">Registrar</a>
                 </div>
             </div>
-        </div>
-        <div className="footer-catalogo-container">
-            <Link href="/catalogo">
-            <div className="footer-catalogo">Catálogo</div>
-            </Link>
-        </div> 
+        </section>
     </main>
+
+    <script type="module" src="../scripts/login.js"></script>
 
 </body>
 

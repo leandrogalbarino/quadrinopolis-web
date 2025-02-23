@@ -32,3 +32,15 @@ export function createFooterHTML() {
 
   body.insertAdjacentElement('beforeend', footer)
 }
+
+
+export function createFooterLogin() {
+  const body = document.querySelector('.logar__body');
+
+  const footer = createElement('footer', 'logar__footer');
+  const link = createElement('a', 'logar__footer-redirecionamento', 'Catálogo', { href: 'index.html' });
+
+  footer.appendChild(link);
+  console.log(footer.innerHTML);
+  body.insertAdjacentElement('beforeend', footer);
+}

@@ -6,68 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
     <link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/pages/registrar.css">
+    <link rel="stylesheet" href="../style/pages/login.css">
 </head>
 
-<body>
-    <main>
+<body class="logar__body">
+    <main class="main">
         <section class="logo-container">
             <div class="logo">
                 Quadrinópolis
             </div>
         </section>
-        <section class="registrar">
-            <div class="registrar__bem-vindo">
+        <section class="logar">
+            <div class="logar__bem-vindo">
                 <p>Bem Vindo!</p>
             </div>
-            <div class="registrar__registro">
-                <form class="registrar__form">
-                    <h2 class="registrar__subtitulo">Criar Conta</h2>
-                    
+            <div class="logar__login">
+                <form class="logar__form">
+                    <h2>Criar Conta</h2>
+
                     <input type="text" name="usuario-registro" id="usuario-registro" placeholder="Usúario">
                     <input type="text" name="senha-registro" id="senha-registro" placeholder="Senha">
                     <input type="password" name="senha-registro2" id="senha-registro2" placeholder="Confirmar Senha">
                     <button class="registrar__submit">Registrar</button>
                 </form>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <a href="catalogo.html" class="footer__redirecionamento">
-            <div>Catálogo</div>
-        </a>
-    </footer>
-
-    <main class="main-container">
-        <div class="main-logo-container">
-            <div class="main-logo-tipo">Quadrinópolis</div>
-        </div>
-        <div class="main-registrar-contatiner">
-            <div class="main-registrar-bem-vindo">
-
-            </div>
-            <div class="main-registrar-estrada-container">
-                <form action="" method="get" class="main-registrar-registro-form">
-                    <p class="criar-conta">Criar Conta</p>
-                    <input type="text" name="usuario-registro" id="usuario-registro" placeholder="Usúario">
-                    <input type="text" name="senha-registro" id="senha-registro" placeholder="Senha">
-                    <input type="password" name="senha-registro2" id="senha-registro2" placeholder="Confirmar Senha">
-                    <button type="submit">Registrar</button>
-                </form>
-                <div class="main-registrar-registro-entrada">
+                <div class="logar__redirecionamento">
                     <p>Já possui cadastro?</p>
                     <a href="entrar.html">Entrar</a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <div class="footer-catalogo-container">
-        <a href="catalogo.html" class="footer-catalogo">
-            <div>Catálogo</div>
-        </a>
-    </div>
 
-    <script type="module" src="../scripts/entrar.js"></script>
+
+    <script type="module" src="../scripts/login.js"></script>
 </body>
 
 </html>
