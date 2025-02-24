@@ -9,7 +9,7 @@ export function createHeaderHTML() {
   const logo = createElement('div', 'header__logo');
   const namePage = createElement('a', 'logo', 'Quadrinópolis', { href: 'index.html' });
   const headerLogin = createElement('div', 'header__login');
-  const linkLogin = createElement('a', '', 'Entrar', { href: 'registrar.html' });
+  const linkLogin = createElement('a', '', 'Entrar', { href: 'entrar.html' });
 
 
   logo.appendChild(namePage);

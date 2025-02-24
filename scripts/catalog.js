@@ -14,31 +14,50 @@ function createWorkElement(work) {
 
 }
 
+
 function createGrid() {
-  works.forEach((work) => {
-    createWorkElement(work);
-  });
+  const url = new URL(window.location.href);
+  let searchName = url.searchParams.get('s');
+  if (searchName) {
+    const catalog = document.querySelector('.js-catalog');
+    console.log(catalog);
+    works.forEach((work) => {
+      const name = work.name.toLowerCase().replace('-', ' ');
+      if (name.startsWith(searchName)) {
+        createWorkElement(work);
+      }
+    });
+
+    if (!catalog.firstChild) {
+      const container = createElement('div', 'search__nothing');
+      const p = createElement('p', 'search__nothing-p', `Nenhuma obra encontrada com: "${searchName}".`)
+      const link = createElement('a', 'search__nothing-link', `Catálogo`, { href: '/html' })
+      
+      container.append(p);
+      container.append(link);
+
+      catalog.appendChild(container);
+
+    }
+
+  } else {
+    works.forEach((work) => {
+      createWorkElement(work);
+    });
+  }
+
 }
 
 function eventPesquisa() {
   const input = document.querySelector('#js-search__input-bar');
   const catalog = document.querySelector('.js-catalog');
 
-  if (input.value.trim() === '') {
+  const name = input.value.trim();
+  if (name === '') {
     return;
   }
-  catalog.replaceChildren();
+  window.location.href = `?s=${name}`;
 
-  works.forEach((work) => {
-    const name = work.name.toLowerCase().replace('-', ' ');
-    const inputValue = input.value.toLowerCase();
-
-    if (name.startsWith(inputValue)) {
-      createWorkElement(work);
-    }
-  });
-
-  input.value = '';
 }
 
 function onClickPesquisa() {

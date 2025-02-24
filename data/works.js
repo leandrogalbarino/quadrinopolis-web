@@ -1,90 +1,65 @@
-export let works = [
-  {
-    cover: '../images/obras/solo-leveling.jpg',
-    name: 'solo-leveling',
-    author: 'Chu-Gong',
-    synopsis: `
-      solo leveling sinopse!
-    `,
-    chapters: 110,
-
-    comments: [{
-      author: 'Kise',
-      comment: 'muitooo boa essa obra, simplesmente sensacional!'
-    },
-    {
-      author: 'Aomine',
-      comment: 'Essa obra é melhor que jogar basquete!'
-    },
-    {
-      author: 'Akashi',
-      comment: 'Amei essa obra que o Kuroko recomendou!'
-    }]
+export let works = [{
+  cover: '../images/obras/solo-leveling.jpg',
+  name: 'solo-leveling',
+  author: 'Chu-Gong',
+  synopsis: `
+    solo leveling sinopse!
+  `,
+  chapters: 25,
+  comments: [{
+    author: 'Kise',
+    comment: 'Pessimo, muito ruim, perda de tempo!'
   },
   {
-    cover: '../images/obras/omv.webp',
-    name: 'omv',
-    author: 'Sing Shong',
-    synopsis: `
-      omv sinopse bla bla bla
-    `,
-    chapters: 110,
-
-    comments: [{
-      author: 'Kise',
-      comment: 'muitooo boa essa obra, simplesmente sensacional!'
-    },
-    {
-      author: 'Aomine',
-      comment: 'Essa obra é melhor que jogar basquete!'
-    },
-    {
-      author: 'Akashi',
-      comment: 'Amei essa obra que o Kuroko recomendou!'
-    }]
+    author: 'Aomine',
+    comment: 'KRLLLLL Muito fodaaaaaaa!'
   },
   {
-    cover: '../images/obras/lookism.jpg',
-    name: 'lookism',
-    author: 'Park Tae Jun',
-    synopsis: `
-      Lorem lookism sinopse 2 
-    `,
-    chapters: 23,
+    author: 'Akashi',
+    comment: 'Amei essa obra que o Kuroko recomendou!'
+  }]
+},
+{
+  cover: '../images/obras/omv.webp',
+  name: 'omv',
+  author: 'Sing Shong',
+  synopsis: `
+    omv sinopse bla bla bla
+  `,
+  chapters: 15,
 
-    comments: [{
-      author: 'Kise',
-      comment: 'muitooo boa essa obra, simplesmente sensacional!'
-    },
-    {
-      author: 'Aomine',
-      comment: 'Essa obra é melhor que jogar basquete!'
-    },
-    {
-      author: 'Akashi',
-      comment: 'Amei essa obra que o Kuroko recomendou!'
-    }]
+  comments: [{
+    author: 'Kise',
+    comment: 'muitooo boa essa obra, simplesmente sensacional!'
   },
   {
-    cover: '../images/obras/solo-leveling.jpg',
-    name: 'loo',
-    author: 'Park Tae Jun',
-    synopsis: `
-      lookism sinopse
-    `,
-    chapters: 23,
+    author: 'Aomine',
+    comment: 'Essa obra é melhor que jogar basquete!'
+  },
+  {
+    author: 'Akashi',
+    comment: 'Amei essa obra que o Kuroko recomendou!'
+  }]
+},
+{
+  cover: '../images/obras/lookism.jpg',
+  name: 'lookism',
+  author: 'Park Tae Jun',
+  synopsis: `
+    Lorem lookism sinopse 2 
+  `,
+  chapters: 23,
 
-    comments: [{
-      author: 'Kise',
-      comment: 'muitooo boa essa obra, simplesmente sensacional!'
-    },
-    {
-      author: 'Aomine',
-      comment: 'Essa obra é melhor que jogar basquete!'
-    },
-    {
-      author: 'Akashi',
-      comment: 'Amei essa obra que o Kuroko recomendou!'
-    }]
-  }
-];
+  comments: [{
+    author: 'Kise',
+    comment: 'muitooo boa essa obra, simplesmente sensacional!'
+  },
+  {
+    author: 'Aomine',
+    comment: 'Essa obra é melhor que jogar basquete!'
+  },
+  {
+    author: 'Akashi',
+    comment: 'Amei essa obra que o Kuroko recomendou!'
+  }]
+}];

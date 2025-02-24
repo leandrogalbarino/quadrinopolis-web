@@ -1,76 +1,15 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* HEADER */
-.header-container {
-    background-image: linear-gradient(rgb(106, 30, 130), rgb(208, 18, 132));
-    height: 100px;
-    margin: 0px;
-    display: flex;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.516);
-}
-
-.header {
-    margin: 0 auto;
-    padding: 0px 20px;
-    width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.header h1 {
-    color: white;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.header h1:hover {
-    color: rgb(183, 182, 182);
-}
-
-.header a {
-    text-decoration: none;
-}
-
-.header-entrar {
-    width: 100px;
-    height: 30px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 20px;
-    background-color: transparent;
-
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-entrar a {
-    text-decoration: none;
-    color: white;
-}
-
-.header-entrar:hover {
-    background-color: rgba(255, 255, 255, 0.33);
-}
 
 
 body {
     background-color: rgb(124, 84, 154);
-    background-image: url(../../imagens/castelo.jpg);
+    background-image: url(../../images/castelo.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.main-container {
+.main{
     margin: 0 auto;
     padding: 0px 20px;
     max-width: 700px;
@@ -82,12 +21,10 @@ body {
     min-height: 700px;
     background-color: rgb(70, 31, 107);
     background: linear-gradient(to bottom, rgb(81, 17, 127) 50%, rgb(219, 219, 219)50%);
-
 }
 
-.main-autor-container {
+.author-container{
     border: none;
-    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +34,7 @@ body {
 
 }
 
-.main-autor {
+.author {
     margin: 0 auto;
     font-size: 20px;
     color: white;
@@ -105,28 +42,29 @@ body {
     text-transform: uppercase;
 }
 
-.main-autor:hover {
+.author:hover {
     color: rgb(185, 183, 183);
 }
 
-.main-titulo {
+.presentation {
     font-size: 40px;
     color: white;
     padding-bottom: 30px;
-}
-
-.main-titulo h1 {
-    font-size: 35px;
     text-align: center;
 }
 
-.main-titulo p {
+.presentation h1 {
+    font-size: 35px;
+}
+
+.presentation p {
     width: 350px;
     font-size: 20px;
     padding: 0 30px 0 30px;
 }
 
-.main-episodios-container {
+/* CAPITULOS */
+.chapters {
     background-image: linear-gradient(rgb(83, 20, 127), rgb(211, 15, 131));
     overflow-y: auto;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.725);
@@ -136,68 +74,67 @@ body {
 
 
 /* Barra de rolagem */
-.main-episodios-container::-webkit-scrollbar {
+.chapters::-webkit-scrollbar {
     width: 10px;
     /* Largura da barra */
     height: 10px;
 }
 
-.main-episodios-container::-webkit-scrollbar-track {
+.chapters::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 5px;
 }
 
 /* Polegar da barra (a parte que desliza) */
-.main-episodios-container::-webkit-scrollbar-thumb {
+.chapters::-webkit-scrollbar-thumb {
     background: rgb(83, 20, 127);
     border-radius: 5px;
 }
 
 /* Polegar ao passar o mouse */
-.main-episodios-container::-webkit-scrollbar-thumb:hover {
+.chapters::-webkit-scrollbar-thumb:hover {
     background: rgba(82, 20, 127, 0.625);
 }
 
 /* Barra no estado ativo (quando clicada) */
-.main-episodios-container::-webkit-scrollbar-thumb:active {
+.chapters::-webkit-scrollbar-thumb:active {
     background: rgb(211, 15, 131);
 }
 
-.main-titulo-episodios {
+
+.chapters__title {
     font-size: 20px;
     padding: 20px;
     color: white;
     font-weight: normal;
-
 }
 
-.main-episodios {
+.chapters__chapter {
     padding: 10px 20px 0px 20px;
     display: flex;
     align-items: center;
     border-bottom: 3px solid rgba(167, 14, 106, 0.349);
 }
 
-.main-episodios a {
+.chapters__chapter a {
     color: white;
     text-decoration: none;
 }
 
-.main-adicionar-comentarios-container {
+/* ADICIONAR COMENTARIOS */
+.add-comment {
     margin: 30px;
     width: 280px;
     height: 150px;
-
 }
 
-.main-adicionar-comentarios-titulo {
-    /* background-color: black; */
+.add-comment__title {
     color: rgb(203, 22, 133);
     font-size: 20px;
     text-align: center;
 }
 
-.main-adicionar-comentarios {
+.add-comment__add {
     height: 100px;
     display: flex;
     align-items: center;
@@ -205,7 +142,7 @@ body {
 
 }
 
-.main-adicionar-comentarios textarea {
+.add-comment__add textarea {
     width: 220px;
     height: 100px;
     border-radius: 5px 0 0 5px;
@@ -214,7 +151,7 @@ body {
     resize: none;
 }
 
-.botao-vertical {
+.add-comment__submit {
     height: 100px;
     width: 30px;
     background-image: linear-gradient(rgb(103, 50, 142), rgb(211, 16, 132));
@@ -228,12 +165,13 @@ body {
     transition: background-color 0.8s, background-image 0.2s;
 }
 
-.botao-vertical:hover {
+.add-comment__submit:hover {
     background-image: none;
     background:  rgb(103, 50, 142);
 }
 
-.main-comentarios-container{
+/* COMENTARIOS */
+.comments{
     padding:10px;
     display: flex;
     flex-wrap: wrap;
@@ -241,23 +179,26 @@ body {
 }
 
 
-.main-comentario{
+.comments__value{
     width: 200px;
     margin:10px;
     color:rgb(83, 20, 127);
+    text-align: center;
 }
-.main-comentario span{
+
+.comments__value span{
     display: block;
     text-align: center;
     font-size: 20px;
     text-transform: capitalize;
 }
 
-.main-footer{
+.footer__work{
+    text-align: center;
     padding:10px;
 }
 
-.main-footer span{
+.footer__work span{
     font-size: 20px;
     color: rgb(186, 186, 186);
 }

@@ -10,3 +10,9 @@ export function createElement(tag, className = '', textContent = '', attributes 
 
   return element;
 }
+
+export function toCapitalizeWords(str) {
+  return str.split(" ").map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  ).join(" ");
+}
