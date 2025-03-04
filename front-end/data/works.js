@@ -1,5 +1,5 @@
 export let works = [{
-  cover: '../images/obras/solo-leveling.jpg',
+  cover: 'solo-leveling.jpg',
   name: 'solo-leveling',
   author: 'Chu-Gong',
   synopsis: `
@@ -20,7 +20,7 @@ export let works = [{
   }]
 },
 {
-  cover: '../images/obras/omv.webp',
+  cover: 'omv.webp',
   name: 'omv',
   author: 'Sing Shong',
   synopsis: `
@@ -42,7 +42,7 @@ export let works = [{
   }]
 },
 {
-  cover: '../images/obras/lookism.jpg',
+  cover: 'lookism.jpg',
   name: 'lookism',
   author: 'Park Tae Jun',
   synopsis: `

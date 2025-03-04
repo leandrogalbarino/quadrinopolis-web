@@ -7,7 +7,7 @@ export function createHeaderHTML() {
   const headerContainer = createElement('header', 'header-container');
   const header = createElement('div', 'header');
   const logo = createElement('div', 'header__logo');
-  const namePage = createElement('a', 'logo', 'Quadrinópolis', { href: 'index.html' });
+  const namePage = createElement('a', 'logo', 'Quadrinópolis', { href: '/html/' });
   const headerLogin = createElement('div', 'header__login');
   const linkLogin = createElement('a', '', 'Entrar', { href: 'entrar.html' });
 
@@ -38,7 +38,7 @@ export function createFooterLogin() {
   const body = document.querySelector('.login__body');
 
   const footer = createElement('footer', 'login__footer');
-  const link = createElement('a', 'login__footer-redirect', 'Catálogo', { href: 'index.html' });
+  const link = createElement('a', 'login__footer-redirect', 'Catálogo', { href: '/' });
 
   footer.appendChild(link);
   body.insertAdjacentElement('beforeend', footer);

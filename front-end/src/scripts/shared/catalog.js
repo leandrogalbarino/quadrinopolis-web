@@ -1,23 +1,23 @@
 import { createElement } from "./utils.js";
 import { createHeaderHTML, createFooterHTML } from "./layout.js";
-import { works } from "../data/works.js";
+import { works } from "../../../data/works.js";
 
 
 function createWorkElement(work) {
   const catalog = document.querySelector('.js-catalog');
 
   const workElement = createElement('a', 'catalog__link-work', '', { href: `${work.name}.html` });
-  const cover = createElement('img', 'catalog__img', '', { src: work.cover, alt: `${work.name}` })
+  const cover = createElement('img', 'catalog__img', '', { src: `../assets/images/works/work-${work.cover}`, alt: `${work.name}` })
+  // const cover = createElement('img', 'catalog__img', '', { src: `../assets/images/works/work-solo-leveling.jpg`, alt: `${work.name}` })
 
   workElement.appendChild(cover);
   catalog.appendChild(workElement);
 
 }
 
-
 function createGrid() {
   const url = new URL(window.location.href);
-  let searchName = url.searchParams.get('s');
+  let searchName = url.searchParams.get('search');
   if (searchName) {
     const catalog = document.querySelector('.js-catalog');
     console.log(catalog);
@@ -56,7 +56,7 @@ function eventPesquisa() {
   if (name === '') {
     return;
   }
-  window.location.href = `?s=${name}`;
+  window.location.href = `?search=${name}`;
 
 }
 

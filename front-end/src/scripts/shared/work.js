@@ -1,5 +1,5 @@
 import { createFooterHTML, createHeaderHTML } from "./layout.js";
-import { works } from "../data/works.js";
+import { works } from "../../../data/works.js";
 import { createElement, toCapitalizeWords } from "./utils.js";
 
 function loadAuthor(work) {
@@ -8,6 +8,9 @@ function loadAuthor(work) {
   authorContainer.appendChild(authorName);
 }
 
+function workImageUrl(workName) {
+  return `../assets/images/works/work-${workName}`;
+}
 
 function loadPresentation(work) {
   const container = document.querySelector('.js-presentation');
