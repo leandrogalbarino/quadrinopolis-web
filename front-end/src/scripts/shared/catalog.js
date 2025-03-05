@@ -8,7 +8,6 @@ function createWorkElement(work) {
 
   const workElement = createElement('a', 'catalog__link-work', '', { href: `${work.name}.html` });
   const cover = createElement('img', 'catalog__img', '', { src: `../assets/images/works/work-${work.cover}`, alt: `${work.name}` })
-  // const cover = createElement('img', 'catalog__img', '', { src: `../assets/images/works/work-solo-leveling.jpg`, alt: `${work.name}` })
 
   workElement.appendChild(cover);
   catalog.appendChild(workElement);
