@@ -6,7 +6,7 @@ export let works = [{
     solo leveling sinopse!
   `,
   chapters: 25,
-  comments: [{
+   comments: [{
     author: 'Kise',
     comment: 'Pessimo, muito ruim, perda de tempo!'
   },

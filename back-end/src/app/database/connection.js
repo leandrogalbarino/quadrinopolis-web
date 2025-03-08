@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
   port: '3306',
   user: 'root',
   password: 'kise',
-  database: 'db_cup'
+  database: 'quadrinopolis_db'
 });
 
 connection.connect();
@@ -18,14 +18,12 @@ connection.connect();
  * @param {string} mensageReject mensagem a ser exibida caso de erro.
  * @returns objeto da Promise
  */
-
 export const consult = (sql, values = '', mensageReject) => {
   return new Promise((resolve, reject) => {
     connection.query(sql, values, (error, result) => {
       if (error) return reject(mensageReject);
       return resolve(result);
-    });
-
+    })
   });
 }
 
