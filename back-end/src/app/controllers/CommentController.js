@@ -14,8 +14,8 @@ class CommentController {
   }
 
   async showByWorkId(request, response) {
-    const id = request.params.name;
-    const row = await CommentRepository.findByName(id);
+    const id = request.params.id;
+    const row = await CommentRepository.findByWorkId(id);
     response.json(row);
   }
 

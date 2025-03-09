@@ -12,17 +12,17 @@ class CommentRepository {
     const sql = 'SELECT * FROM comments';
     const mensageError = 'Não foi possível encontrar comentários';
     return consult(sql, mensageError);
-
   }
 
   findByWorkId(id) {
     const sql = 'SELECT * FROM comments WHERE idWork=?';
+    const mensageError = 'Não foi possível encontrar comentários';
     return consult(sql, id, mensageError);
   }
 
   findById(id) {
     const sql = 'SELECT * FROM comments WHERE idComment=?';
-    const mensageError = 'Não foi possível encontrar comentários';
+    const mensageError = 'Não foi possível encontrar o comentário';
     return consult(sql, id, mensageError);
   }
 
