@@ -8,7 +8,7 @@ class ChapterController{
   }
 
   async showByWorkId(request, response) {
-    const id = request.params.workId;
+    const id = request.params.id;
     const row = await ChapterRepository.findByWorkId(id);
     response.json(row)
   }

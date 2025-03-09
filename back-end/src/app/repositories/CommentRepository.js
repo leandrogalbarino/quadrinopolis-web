@@ -8,10 +8,16 @@ class CommentRepository {
     return consult(sql, data, mensageError);
   }
 
-  findByWorkId(idWork) {
-    const sql = 'SELECT * FROM comments WHERE idWork=?';
+  findAll() {
+    const sql = 'SELECT * FROM comments';
     const mensageError = 'Não foi possível encontrar comentários';
-    return consult(sql, idWork, mensageError);
+    return consult(sql, mensageError);
+
+  }
+
+  findByWorkId(id) {
+    const sql = 'SELECT * FROM comments WHERE idWork=?';
+    return consult(sql, id, mensageError);
   }
 
   findById(id) {

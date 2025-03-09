@@ -1,4 +1,4 @@
-import { consult } from '../database/connection';
+import { consult } from '../database/connection.js';
 
 class WorkRepository{
   create(data) {
@@ -14,7 +14,7 @@ class WorkRepository{
   }
 
   findById(id) {
-    const sql = 'SELECT * FROM works WHERE id=?;'
+    const sql = 'SELECT * FROM works WHERE idWork=?;'
     const mensageError = `Não foi possível localizar uma obra com id=${id}.`;
     return consult(sql, id, mensageError);
   }
@@ -26,13 +26,13 @@ class WorkRepository{
   }
 
   update(id, data) {
-    const sql = 'UPDATE works SET ? WHERE id=?;'
+    const sql = 'UPDATE works SET ? WHERE idWork=?;'
     const mensageError = `Não foi possível atualizar a obra com id=${id}`;
     return consult(sql, [data, id], mensageError);
   }
 
   delete(id) {
-    const sql = 'DELETE FROM works WHERE id=?;'
+    const sql = 'DELETE FROM works WHERE idWork=?;'
     const mensageError = `Não foi possível deletar a obra com id=${id}`;
     return consult(sql, id, mensageError);
   }

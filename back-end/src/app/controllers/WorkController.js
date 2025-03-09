@@ -40,4 +40,4 @@ class WorkController {
 
 }
 
-export default new SelectionController();
+export default new WorkController();

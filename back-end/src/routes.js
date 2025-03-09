@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import WorkController from './app/controllers/WorkController';
-import ChapterController from './app/controllers/ChapterController';
-import CommentRepository from './app/repositories/CommentRepository';
+import WorkController from './app/controllers/WorkController.js';
+import ChapterController from './app/controllers/ChapterController.js';
+import CommentController from './app/controllers/CommentController.js';
 
 const routes = Router();
 
@@ -15,12 +15,12 @@ routes.put('/works/:id', WorkController.update);
 routes.delete('/works/:id', WorkController.delete);
 
 // Comments
-routes.post('/comments', CommentRepository.store);
-routes.get('/comments', CommentRepository.index);
-routes.get('/comments/:id', CommentRepository.showById);
-routes.get('/comments/work/:id', CommentRepository.showByWorkId);
-routes.put('/comments/:id', CommentRepository.update);
-routes.delete('/comments/:id', CommentRepository.delete);
+routes.post('/comments', CommentController.store);
+routes.get('/comments', CommentController.index);
+routes.get('/comments/:id', CommentController.showById);
+routes.get('/comments/work/:id', CommentController.showByWorkId);
+routes.put('/comments/:id', CommentController.update);
+routes.delete('/comments/:id', CommentController.delete);
 
 // Chapters
 routes.post('/chapters/', ChapterController.store);
